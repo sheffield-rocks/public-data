@@ -1,0 +1,26 @@
+{
+  "name": "events",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "BUN_TMPDIR=/tmp bun run src/index.ts",
+    "start": "BUN_TMPDIR=/tmp bun run src/index.ts",
+    "run:once": "BUN_TMPDIR=/tmp bun run src/run-once.ts",
+    "test": "BUN_TMPDIR=/tmp bun test",
+    "test:unit": "BUN_TMPDIR=/tmp bun test tests/parsers.test.ts",
+    "test:integration": "BUN_TMPDIR=/tmp bun test tests/integration",
+    "test:e2e": "BUN_TMPDIR=/tmp bun test tests/e2e",
+    "test:live": "BUN_TMPDIR=/tmp bun test tests/integration tests/e2e"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@rowanmanning/feed-parser": "^2.1.1",
+    "cheerio": "^1.1.2"
+  }
+}

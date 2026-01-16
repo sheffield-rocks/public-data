@@ -1,0 +1,132 @@
+[
+  {
+    "id": "sheffield-city-centre-rss",
+    "name": "Sheffield City Centre: Events RSS",
+    "type": "rss",
+    "url": "https://sheffieldcitycentre.com/rss",
+    "intervalMinutes": 60
+  },
+  {
+    "id": "sheffield-transformed-events",
+    "name": "Sheffield Transformed: Events",
+    "type": "html",
+    "url": "https://www.sheffieldtransformed.org/events",
+    "intervalMinutes": 180,
+    "itemSelector": "article.eventlist-event",
+    "titleSelector": ".eventlist-title-link",
+    "urlSelector": ".eventlist-title-link",
+    "dateSelector": "time.event-date"
+  },
+  {
+    "id": "steelcitystriders-rss",
+    "name": "Steel City Striders: Club posts (WordPress RSS)",
+    "type": "rss",
+    "url": "https://www.steelcitystriders.co.uk/feed/",
+    "intervalMinutes": 120
+  },
+  {
+    "id": "bbc-england",
+    "name": "BBC News: England",
+    "type": "rss",
+    "url": "https://feeds.bbci.co.uk/news/england/rss.xml",
+    "intervalMinutes": 30
+  },
+  {
+    "id": "bbc-scotland",
+    "name": "BBC News: Scotland",
+    "type": "rss",
+    "url": "https://feeds.bbci.co.uk/news/scotland/rss.xml",
+    "intervalMinutes": 30
+  },
+  {
+    "id": "bbc-wales",
+    "name": "BBC News: Wales",
+    "type": "rss",
+    "url": "https://feeds.bbci.co.uk/news/wales/rss.xml",
+    "intervalMinutes": 30
+  },
+  {
+    "id": "bbc-northern-ireland",
+    "name": "BBC News: Northern Ireland",
+    "type": "rss",
+    "url": "https://feeds.bbci.co.uk/news/northern_ireland/rss.xml",
+    "intervalMinutes": 30
+  },
+  {
+    "id": "fsa-news",
+    "name": "Food Standards Agency: All news",
+    "type": "rss",
+    "url": "https://www.food.gov.uk/rss-feed/news",
+    "intervalMinutes": 60
+  },
+  {
+    "id": "fsa-news-wales",
+    "name": "Food Standards Agency: News in Wales",
+    "type": "rss",
+    "url": "https://www.food.gov.uk/rss-feed/news-wales",
+    "intervalMinutes": 60
+  },
+  {
+    "id": "fsa-news-ni",
+    "name": "Food Standards Agency: News in Northern Ireland",
+    "type": "rss",
+    "url": "https://www.food.gov.uk/rss-feed/news-ni",
+    "intervalMinutes": 60
+  },
+  {
+    "id": "fsa-food-alerts",
+    "name": "Food Standards Agency: Food alerts",
+    "type": "rss",
+    "url": "https://www.food.gov.uk/rss-feed/alerts-food",
+    "intervalMinutes": 30
+  },
+  {
+    "id": "fsa-allergy-alerts",
+    "name": "Food Standards Agency: Allergy alerts",
+    "type": "rss",
+    "url": "https://www.food.gov.uk/rss-feed/alerts-allergy",
+    "intervalMinutes": 30
+  },
+  {
+    "id": "scts-news",
+    "name": "Scottish Courts: News articles",
+    "type": "rss",
+    "url": "https://api.pa.web.scotcourts.gov.uk/web/rss/NewsArticles",
+    "intervalMinutes": 120
+  },
+  {
+    "id": "scts-publications",
+    "name": "Scottish Courts: Publications",
+    "type": "rss",
+    "url": "https://api.pa.web.scotcourts.gov.uk/web/rss/Publications",
+    "intervalMinutes": 240
+  },
+  {
+    "id": "legislation-scotland",
+    "name": "Legislation.gov.uk: New legislation (Scotland)",
+    "type": "rss",
+    "url": "https://www.legislation.gov.uk/new/scotland/data.feed",
+    "intervalMinutes": 240
+  },
+  {
+    "id": "legislation-wales",
+    "name": "Legislation.gov.uk: New legislation (Wales)",
+    "type": "rss",
+    "url": "https://www.legislation.gov.uk/new/wales/data.feed",
+    "intervalMinutes": 240
+  },
+  {
+    "id": "legislation-ni",
+    "name": "Legislation.gov.uk: New legislation (Northern Ireland)",
+    "type": "rss",
+    "url": "https://www.legislation.gov.uk/new/ni/data.feed",
+    "intervalMinutes": 240
+  },
+  {
+    "id": "wyp-all-news",
+    "name": "West Yorkshire Police: All news (incl. local NPT)",
+    "type": "rss",
+    "url": "https://www.westyorkshire.police.uk/news/all/feed",
+    "intervalMinutes": 120
+  }
+]

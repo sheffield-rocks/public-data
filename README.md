@@ -15,12 +15,13 @@ Scheduled workflows live here and write outputs into `data/<domain>/`.
 - Data: `data/sky/sky-config.json`
 - Pipeline: `pipelines/sky/update-sky-data.ts`
 
-### buses (placeholder)
-- Data: `data/buses/`
+### buses
+- Data: `data/buses/sheffield-gtfsrt.json`
+- Data: `data/buses/stops/*.json`
 - Pipeline: `pipelines/buses/`
 
-### events (placeholder)
-- Data: `data/events/`
+### events
+- Data: `data/events/events.sqlite`
 - Pipeline: `pipelines/events/`
 
 ## Running locally
@@ -29,6 +30,16 @@ Scheduled workflows live here and write outputs into `data/<domain>/`.
 # From repo root
 bun pipelines/sky/update-sky-data.ts
 ```
+
+## Workflow secrets
+
+- `BODS_API_KEY` (required for buses workflow)
+
+## Serving decisions
+
+- JSON artifacts keep their `.json` extension in this repo and when served statically.
+- Extensionless endpoints are only provided when a server (Nginx/Fastify/etc.) is in front of the data.
+- See `docs/serving.md`.
 
 ## Consumer repos
 
