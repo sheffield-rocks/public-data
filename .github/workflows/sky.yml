@@ -1,0 +1,37 @@
+name: Update sky data
+
+on:
+  schedule:
+    - cron: "15 4 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Update sky data
+        run: bun pipelines/sky/update-sky-data.ts
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- data/sky/sky-config.json; then
+            echo "No sky data changes."
+            exit 0
+          fi
+
+          git config user.name "sheffield-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/sky/sky-config.json
+          git commit -m "Update sky data"
+          git push
