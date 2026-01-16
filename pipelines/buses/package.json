@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "bun run bods-stops-sheffield.ts",
+    "build:stops": "bun run naptan-stops-sqlite.ts",
+    "validate:stops": "bun run validate-stops-sqlite.ts",
     "test": "bun test"
   },
   "dependencies": {

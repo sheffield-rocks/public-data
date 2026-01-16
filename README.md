@@ -18,6 +18,7 @@ Scheduled workflows live here and write outputs into `data/<domain>/`.
 ### buses
 - Data: `data/buses/sheffield-gtfsrt.json`
 - Data: `data/buses/stops/*.json`
+- Data: `data/buses/stops.sqlite`
 - Pipeline: `pipelines/buses/`
 
 ### events
